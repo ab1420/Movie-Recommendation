@@ -4,7 +4,7 @@ from flask import Flask, jsonify, render_template, request
 from model import recommend_movie
 
 app = Flask(__name__)
-model = pickle.load(open('model.pkl', 'rb'))
+model = pickle.load(open('mymodel.pkl', 'rb'))
 
 @app.route('/')
 def home():
